@@ -1,1 +1,13 @@
-HandROM: A Real-Time RGBD System for Tracking Functional Impairments in Hand Motion
+## HandROM: A Real-Time RGBD System for Tracking Functional Impairments in Hand Motion
+
+Accurate hand range of motion (ROM) evaluation is essential for remote monitoring of hand impair-
+ments, including those caused by rheumatoid arthritis (RA), injury, or neurological conditions. This
+paper presents a real-time, streaming-capable classification framework using the iPhone TrueDepth
+camera to extract RGBD video of hand movement. The system integrates depth preprocessing, 3D pose
+estimation with MediaPipe Hands, joint angle computation, and temporal classification using LSTM
+models. We explore two dimensionality reduction strategies, PCA and Random Projection, and demon-
+strate how jitter-based data augmentation enhances model generalization. The system is validated qual-
+itatively against motion capture data from Qualisys. Results show that the best model using RGBD data,
+PCA, and synthetic augmentation achieves a 93% classification accuracy and balanced F1 scores, sig-
+nificantly outperforming RGB-only baselines. This work provides a clinically relevant, scalable solution
+for telehealth applications.
